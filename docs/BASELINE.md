@@ -65,15 +65,12 @@ Top bottlenecks (sorted by cumulative time):
 
 ## 4. Empirical Computational Complexity
 
-We will later run:
+To make, run:
 ```bash
 make complexity
 ```
+Each simulation replicate generates m p-values and applies the Benjamini–Hochberg procedure across all m hypotheses.
 
-Planned outputs:
-- runtime vs sample size (n or m)
-- log-log plot in `unit-3/results/figures/baseline_complexity.png`
-- estimated complexity: TODO
 
 ### Complexity Plot
 
