@@ -87,8 +87,3 @@ simple arithmetic operations. Therefore, no evidence of numerical instability wa
 detected.
 
 
----
-
-## 6. Summary
-
-This file will be updated after profiling and timing in Step 2.
