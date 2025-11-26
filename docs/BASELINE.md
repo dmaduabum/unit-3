@@ -80,13 +80,12 @@ Each simulation replicate generates m p-values and applies the Benjamini–Hochb
 
 ## 5. Numerical Stability Issues
 
-Record any:
-- overflow/underflow warnings
-- NaN p-values
-- instability in variance or BH threshold comparisons
+No numerical warnings, NaNs, overflows, underflows, or convergence issues were
+observed during the execution of the baseline simulation study. All p-values were
+generated from well-behaved distributions, and the BH procedure involves only
+simple arithmetic operations. Therefore, no evidence of numerical instability was
+detected.
 
-For now:
-- Observed issues: TODO
 
 ---
 
