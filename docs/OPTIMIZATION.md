@@ -92,12 +92,12 @@ Using `make parallel`:
 | 8     | 3.858         | 0.48×   |
 
 ## Interpretation
+- Parallelization made it slow!
 - Parallel runtime increased because the optimized simulation is already very fast.
 - The overhead of spinning up workers exceeded the compute time.
-- This is still acceptable: the goal was to demonstrate parallelization and analyze scaling, which I did.
 
 ## Speedup Plot
-*(Insert plot here)*
+![Parallel Speedup](../results/figures/parallel_speedup.png)
 
 ---
 
@@ -125,13 +125,12 @@ This confirms the optimization goals were met.
 # 5. Performance Comparison Visualizations
 
 ## 5.1 Baseline vs Optimized Runtime
-*(Insert plot here)*
+![Baseline vs Optimized Runtime](../results/figures/runtime_comparison.png)
+
 
 ## 5.2 Complexity (Baseline vs Optimized)
-*(Insert plot here)*
+![Complexity Comparison](../results/figures/complexity_comparison.png)
 
-## 5.3 Parallel Speedup
-(Shown above)
 
 ---
 
@@ -152,7 +151,6 @@ The tests check:
 - FDR and TPR values match baseline within tolerance
 - Summary statistics of p-values are close
 - No numerical instability or NaN values appeared
-- Both baseline and optimized versions behave identically under edge cases
 
 **All regression tests passed.**
 
@@ -183,4 +181,5 @@ This Unit 3 project improved the simulation runtime substantially:
 - Parallel simulation replicates were implemented
 - Runtime fell from **6.067 sec → 1.643 sec**
 - Accuracy and numerical correctness were preserved
+
 
