@@ -71,7 +71,7 @@ runtime-plot:
 # ------------------------------------------------------
 
 figures: runtime-plot compare speedup
-	PYTHONPATH=. python src/visualize.py
+	PYTHONPATH=. python baseline/visualize.py
 
 # ------------------------------------------------------
 # 5. Stability / Regression Testing
