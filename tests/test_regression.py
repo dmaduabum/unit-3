@@ -5,11 +5,14 @@ Regression tests for the optimized BH (1995) simulation.
 Author: Dili K. Maduabum
 Last edit: November 2025
 """
-import os
+
 import numpy as np
 from scipy.stats import ks_2samp
 from baseline.simulation import run_single_simulation
 from optimized.simulation_opt import run_single_sim_opt
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 
 def test_single_replicate_equivalence():
     """
@@ -48,4 +51,10 @@ def test_distribution_equivalence():
     # KS test for distributional equivalence
     stat, p = ks_2samp(p1, p2)
     assert p > 0.05   # fail only if distribution meaningfully differs
+
+if __name__ == "__main__":
+    test_single_replicate_equivalence()
+    test_distribution_equivalence()
+    print("All regression tests passed.")
+
 
