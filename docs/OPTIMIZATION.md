@@ -1,4 +1,3 @@
-# OPTIMIZATION.md  
 **Unit 3 – High-Performance Simulation Study**  
 **Author:** Dili K. Maduabum  
 **Last updated:** November 2025  
@@ -184,3 +183,4 @@ This Unit 3 project improved the simulation runtime substantially:
 - Parallel simulation replicates were implemented
 - Runtime fell from **6.067 sec → 1.643 sec**
 - Accuracy and numerical correctness were preserved
+
