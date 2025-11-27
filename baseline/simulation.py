@@ -20,9 +20,9 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm
 
-from dgps import generate_pvalues
-from methods import bh_procedure, bonferroni_method, uncorrected_method
-from metrics import compute_fdr, compute_power
+from baseline.dgps import generate_pvalues
+from baseline.methods import bh_procedure, bonferroni_method, uncorrected_method
+from baseline.metrics import compute_fdr, compute_power
 
 # ------------------------
 # Simulation configuration
