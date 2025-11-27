@@ -9,8 +9,9 @@ Last edit: November 2025
 import numpy as np
 import matplotlib.pyplot as plt
 import subprocess
-import os
 import time
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 def time_opt(m, reps=20):
     # Time optimized single replicate
