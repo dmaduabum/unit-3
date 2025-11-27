@@ -6,7 +6,7 @@
 
 # 1. Overview
 
-This document summarizes the optimizations applied to my Unit 2 simulation study, following the Unit 3 project requirements. I implemented improvements in two categories:
+This document summarizes the optimizations applied to my Unit 2 simulation study. I implemented improvements in two categories:
 
 1. **Array Programming (Vectorization)**  
 2. **Parallelization (Joblib across simulation replicates)**  
@@ -170,5 +170,6 @@ The tests check:
 
 4. **Profiling early matters.**  
    I would have wasted time optimizing the wrong pieces without it.
+
 
 
