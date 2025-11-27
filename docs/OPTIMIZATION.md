@@ -163,23 +163,12 @@ The tests check:
 
 2. **Parallelization does not always help.**  
    When the workload is small, overhead dominates.  
-   Still, implementing parallel replicates was valuable.
+   Still, implementing parallel replicates was useful to learn!
 
 3. **Pandas inside loops is expensive.**  
    Using pure NumPy is much faster.
 
 4. **Profiling early matters.**  
    I would have wasted time optimizing the wrong pieces without it.
-
----
-
-# 8. Summary
-
-This Unit 3 project improved the simulation runtime substantially:
-
-- Vectorized methods replaced slow Python loops
-- Parallel simulation replicates were implemented
-- Runtime fell from **6.067 sec → 1.643 sec**
-- Accuracy and numerical correctness were preserved
 
 
